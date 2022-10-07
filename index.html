@@ -3,23 +3,12 @@
 <head>
 <title>Todo</title>
 <link rel="stylesheet" type="text/css" href="index.css">
+<script src="myscripts.js"></script>
 </head>
 <body>
 <div class="bigbox">
 <button style="display: inline;margin-left: 5px;height: 36px;" id="submit" onclick="btnfun()">Change Color</button><br><br>
 <span style="color: #fff;">Coded by <a href="https://twitter.com/josephfabo">Fabo joseph</a></span>
 </div>
-<script type="text/javascript">
-  function btnfun(){
-    var random = randomColor();
-    document.body.style.backgroundColor = random;
-    document.getElementById('submit').style.color = random;
-
-    function randomColor(){
-      return '#' + Math.floor(Math.random() * 16777215).toString(16);
-    }
-  }
-</script>
-
 </body>
 </html>
